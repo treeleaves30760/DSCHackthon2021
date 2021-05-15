@@ -18,11 +18,11 @@
     $lastTime = $data['time'];
     if ($nowTime > $lastTime + 60) {
         echo(gmdate('Y-m-d h:i:s', $nowTime + 3600*($timezone+date("I"))));
-
+        $data['time'] = $nowTime += 60;
     } else {
         echo(gmdate('Y-m-d h:i:s', $lastTime + 3600*($timezone+date("I"))));
+        $data['time'] += 60;
     }
-    $data['time'] += 60;
     fwrite($myjson, json_encode ( $data ));
     fclose($myjson);
 ?>
