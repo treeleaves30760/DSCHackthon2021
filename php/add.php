@@ -1,4 +1,15 @@
 <?php
+  if ($_POST['name'] == "") {
+    echo "<script>alert('警告：請輸入領餐者姓名');</script>";
+    header('Location: ../admin.php');
+    exit;
+  } else if ($_POST['meal'] == "") {
+    echo "<script>alert('警告：請輸入餐點名稱');</script>";
+    header('Location: ../admin.php');
+    exit;
+  }
+  
+  
   $json_data = file_get_contents('../js/text.json');
   $data = json_decode($json_data, true);
 
