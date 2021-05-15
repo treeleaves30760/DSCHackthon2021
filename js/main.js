@@ -32,18 +32,18 @@
 //   }
 // })
 
-var id = setInterval(()=>{$.get('./text.json', async(js)=>{
-      $("#messageContainer").find(".container").remove();
-    js.forEach(element => {
-      const messageContainer = $("#messageContainer");
-      template = document.importNode(document.getElementById("messagePart").content, true);
-      $("#textPart", template).text(element["message"]);
-      $("#timePart", template).text(element["time"]);
-      // console.log(template);
-      messageContainer.append(template);
-    });
-    })},1000);
+// var id = setInterval(()=>{$.get('./text.json', async(js)=>{
+//       $("#messageContainer").find(".container").remove();
+//     js.forEach(element => {
+//       const messageContainer = $("#messageContainer");
+//       template = document.importNode(document.getElementById("messagePart").content, true);
+//       $("#textPart", template).text(element["message"]);
+//       $("#timePart", template).text(element["time"]);
+//       // console.log(template);
+//       messageContainer.append(template);
+//     });
+//     })},1000);
   
-function myAjax(obj) {
+// function myAjax(obj) {
      
- }
+//  }
