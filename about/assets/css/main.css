@@ -42,6 +42,10 @@ body {
 	line-height: 1;
 }
 
+.upp {
+	margin-bottom: 200px;
+}
+
 ol, ul {
 	list-style: none;
 }
