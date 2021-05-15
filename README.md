@@ -2,7 +2,7 @@
 
 ### Project Name 
 ### Team member
-* 黃雯琪 ()
+* 黃雯琪 (angelh52@gmail.com)
 * 許博翔 (treeleaves30760@gmail.com)
 * 王柏涵 (allen109061101@gapp.nthu.edu.tw)
 
@@ -41,6 +41,12 @@ Our idea is simple:
 	* At the backend, we will analyze the INFO between the manager side and the user side to check if the user had "actually" order the meal
 	* After the analysis, the user will get a reservation number which is used to pick up his/her meal
 * ultimate goal
-	**premise: collaboration with food delivery platform, each order has its own unique QRcode**
-	* We set a automatic 
+	* **premise: collaboration with food delivery platform, each order has its own unique QRcode**
+	* Problem we found: what if hundreds of order arrived at the same time? the contact between the manager and the delivery man is inevitable!!
+	* Solution: We use machine to receive the delivery instead of manager
+	* Step:
+		1. We set a automatic food machine which contains lots of blocks to store the food)
+		2. When the food delivery men arrived, they need to scan the QRcode, after getting the INFO of the food, the machine will open a block for the delivery men to put the food inside.
+		3. At the user side, When they get the notification to pick up the food, they also need to scan the QRcode of his/her food. After authentication, the machine will open the block which contains his/her food.
+		4. After picking up the food, the system will show that "Enjoy your meal!"
 
