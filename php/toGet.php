@@ -41,7 +41,7 @@
                 </h2>
             </h2>
         </button>
-        <button class="btn btn-warning btn-lg" href="../index.php">
+        <button class="btn btn-warning btn-lg" onclick="location.href='../index.php'">
             回到主頁
         </button>
     </div>
