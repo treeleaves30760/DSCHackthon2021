@@ -1,10 +1,12 @@
 <?php
   if ($_POST['name'] == "") {
     echo "<script>alert('警告：請輸入領餐者姓名');</script>";
-    header('Location: ../admin.php');
+    echo "<a href='../admin.php'>回到上一頁</a>";
+    // header('Location: ../admin.php');
     exit;
   } else if ($_POST['meal'] == "") {
     echo "<script>alert('警告：請輸入餐點名稱');</script>";
+    echo "<a href='../admin.php'>回到上一頁</a>";
     header('Location: ../admin.php');
     exit;
   }
