@@ -18,7 +18,8 @@
 
 <body>
     <div class="container d-flex align-items-center justify-content-center flex-column">
-        <h2>預約成功</h2>
+        <h2><b>預約成功</b></h2>
+        <br>
         <button class="btn btn-success">
             <h2>領取時間<h2 class="timeToGet">
                     <?php
@@ -41,8 +42,9 @@
                 </h2>
             </h2>
         </button>
+        <br>
         <button class="btn btn-warning btn-lg" onclick="location.href='../index.php'">
-            回到主頁
+            <b>回到主頁</b>
         </button>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
