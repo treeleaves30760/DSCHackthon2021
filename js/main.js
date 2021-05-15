@@ -1,25 +1,34 @@
-
-
 $(document).on("click", ({ target }) => {
   if ($(target).hasClass("submit")) {
     var time = new Date();
-    var stri = document.getElementById("messageToSend").value;
+    var name = document.getElementById("name").value;
+    var meal = document.getElementById("meal").value;
     const messageContainer = $("#messageContainer");
     template = document.importNode(document.getElementById("messagePart").content, true);
-    $("#textPart", template).text(`${stri}`);
+    $("#namePart", template).text(`${name}`);
+    $("#mealPart", template).text(`${meal}`);
     $("#timePart", template).text(`${time.getTime()}`);
     // console.log(template);
     messageContainer.append(template);  
     var obj = {
-      message: stri,
-      time: time.getTime()
+      name = name,
+      meal = meal,
+      arriveTime = time.getTime(),
+      isGet = 0
     };
     $.ajax({
       type: "POST",
-      url: './add.php',
+      url: './php/add.php',
       data: obj
     });
     
+  } else if ($(target).hasClass("confirm")) {
+    var orderId = document.getElementById("sendId").value;
+    $.ajax({
+      type: "POST",
+      url: './php/confirm.php',
+      data: orderId
+    });
   }
 })
 

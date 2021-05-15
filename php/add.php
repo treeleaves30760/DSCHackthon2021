@@ -14,7 +14,7 @@
   array_push($data,$arr);
   fwrite($myjson, json_encode ( $data ));
   fclose($myjson);
-  header('Location: https://chat.hsupohsiang.repl.co/');
+  header('Location: ./index.php');
   exit;
 
 ?>

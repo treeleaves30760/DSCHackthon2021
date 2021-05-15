@@ -5,7 +5,7 @@
 
   $myjson = fopen("./js/text.json", "w");
   $arrlength = count($data);
-  $id = $_POST['orderId'];
+  $id = $_POST;
   for($i = 0; $i < $arrlength; $i++) {
     if (data[i]['orderId'] == id) {
       data[i]['isGet'] = 1;
