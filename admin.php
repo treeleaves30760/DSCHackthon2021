@@ -19,8 +19,8 @@
         .app-container {
             padding-top: 120px;
             padding-bottom: 120px;
-            padding-left: 120px;
-            padding-right: 120px;
+            padding-left: 10%;
+            padding-right: 10%;
 
         }
     </style>
