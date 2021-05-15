@@ -36,7 +36,7 @@
     <header class="header">
         <nav class="navbar navbar-expand-lg fixed-top py-3">
             <div class="container"><a href="./index.php"
-                    class="navbar-brand text-uppercase font-weight-bold">宿舍食物外送分配取餐系統</a>
+                    class="navbar-brand text-uppercase font-weight-bold">梅竹Eat!</a>
                 <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
                     class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
