@@ -95,8 +95,8 @@
 
         body {
             min-height: 110vh;
-            background-color: #4ca1af;
-            background-image: linear-gradient(135deg, #4ca1af 0%, #c4e0e5 100%);
+            background-color: rgb(240, 243, 255);
+            background-image: linear-gradient(135deg, rgb(239, 241, 254) 0%, rgb(255, 255, 255) 100%);
         }
 
         .crude {
