@@ -57,32 +57,21 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr ng-repeat="task in tasks" class="{{ task.status ? 'table-success' : 'table-light' }}">
+                    <tr ng-repeat="task in tasks" ng-show = "{{ task.isGet == 0 }}" class="{{ task.isGet ? 'table-success' : 'table-light' }}">
                         <td>{{ task.name }}</td>
                         <td>{{ task.meal }}</td>
                         <td>{{ task.arriveTime }}</td>
                         <td>
-                            <button class="btn btn-success confirm" ng-click="finished($index)">
-                                {{ task.isGet ? "已領取" : "領取" }}
-                            </button>
-
+                            <form action = "./php/confirm.php" method="post">
+                                <input type="number" hidden="true" value="{{ task.orderId }}" name="orderId">
+                                <input type="submit" class="btn btn-success confirm" value="{{ task.isGet ? '已領取' : '領取' }}"/>
+                            </form>
                         </td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </div>
-
-    <!-- <div class="container">
-        <template id = "foodList">
-            <div class = "container">
-                <div class = "row">
-                    <div class = "pb-3 col-9 bg-light textPP" id = "namePart"></div>
-                    <div class = "pb-3 col-3 timePart textPP" id = "mealPart"></div><br>
-                </div>
-            </div>
-        </template>
-    </div> -->
 
     <script>
         var app = angular.module("myApp", []);
@@ -114,7 +103,7 @@
                 $scope.tasks.splice(i, 1);
             };
             $scope.finished = function (i) {
-                $scope.tasks[i].status = true;
+                $scope.tasks[i].isGet = 1;
             };
 
 
