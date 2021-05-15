@@ -20,10 +20,10 @@
             
             		<div id="navbarSupportedContent" class="collapse navbar-collapse">
                 		<ul class="navbar-nav ml-auto">
-                   			<li class="nav-item active"><a href="./index.php" class="nav-link text-uppercase font-weight-bold">Home <span class="sr-only">(current)</span></a></li>
+                   			<li class="nav-item active"><a href="../index.php" class="nav-link text-uppercase font-weight-bold">Home <span class="sr-only">(current)</span></a></li>
             	        	<li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">About</a></li>
                 	    	<li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">Contact</a></li>
-                    		<li class="nav-item"><a href="./admin.php" class="nav-link text-uppercase font-weight-bold">To Admin</a></li>
+                    		<li class="nav-item"><a href="../admin.php" class="nav-link text-uppercase font-weight-bold">To Admin</a></li>
     	            	</ul>
         	    	</div>
         		</div>
