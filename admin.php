@@ -3,6 +3,7 @@
 
 <head>
     <title>外送管理員介面</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
@@ -24,6 +25,7 @@
 
         }
     </style>
+    
 </head>
 
 <body>
@@ -33,14 +35,20 @@
         <h3>外送管理員介面</h3>
         <div class="d-flex align-items-center mb-3">
             <form action="/php/add.php" method="post">
-                <div class="form-group mr-3 mb-0">
-                    <input ng-model="your_Name" type="text" class="form-control" name="name"
+                <thead>
+                    <tr>
+                    <div class="form-group mr-3 mb-0">
+                        <input ng-model="your_Name" type="text" class="form-control" name="name"
                         placeholder="輸入名稱" />
-                </div>
-                <div class="form-group mr-3 mb-0">
-                    <input ng-model="yourTask" type="text" class="form-control" name="meal"
+                    </div>
+                    </tr>
+                    <tr>
+                    <div class="form-group mr-3 mb-0">
+                        <input ng-model="yourTask" type="text" class="form-control" name="meal"
                         placeholder="輸入餐點" />
-                </div>
+                    </div>
+                    </tr>
+                </thead>
 
                 <input type="submit" class="btn btn-warning mr-3 submit" value="新增餐點"/>
             </form>
