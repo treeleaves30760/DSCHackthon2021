@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>外送管理</title>
+    <title>外送管理員介面</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
@@ -30,7 +30,21 @@
     <div class="app-container align-items-center justify-content-center flex-column" ng-app="myApp"
         ng-controller="myController">
         {{ task_name }}
-        <h3>外送管理</h3>
+        <h3>外送管理員介面</h3>
+        <div class="d-flex align-items-center mb-3">
+            <div class="form-group mr-3 mb-0">
+                <input ng-model="your_Name" type="text" class="form-control" id="formGroupExampleInput"
+                    placeholder="輸入餐點" />
+            </div>
+            <div class="form-group mr-3 mb-0">
+                <input ng-model="yourTask" type="text" class="form-control" id="formGroupExampleInput"
+                    placeholder="輸入餐點" />
+            </div>
+
+            <button type="button" class="btn btn-warning mr-3" ng-click="saveTask()">
+                新增餐點
+            </button>
+        </div>
         {{ yourName }}
         <div class="table-wrapper">
             <table class="table table-hover">
@@ -73,7 +87,7 @@
             // localStorage.setItem("tasks", JSON.stringify($scope.tasks));
 
             $scope.saveTask = function () {
-                $scope.tasks.push({ task_name: $scope.yourTask, status: false });
+                $scope.tasks.push({ task_user: $scope.your_Name, task_name: $scope.yourTask, status: false });
                 //   localStorage.setItem("tasks", JSON.stringify($scope.tasks));
             };
             $scope.getTask = function () {
