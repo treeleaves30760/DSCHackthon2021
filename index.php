@@ -45,14 +45,14 @@
                         <th>名字</th>
                         <th>餐點</th>
                         <th>送達時間</th>
-                        <th>領取</th>
+                        <th>預約</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr ng-repeat="task in tasks" ng-show = "{{ task.isGet == 0 }}" class="{{ task.isGet ? 'table-success' : 'table-light' }}">
                         <td>{{ task.name }}</td>
                         <td>{{ task.meal }}</td>
-                        <td>{{ task.arriveTime }}</td>
+                        <td>{{ task.arriveTime }}</td>        <!--// 前面n個人: arriveTime + 60 * (n + 1) -->
                         <td>
                             <form action = "./php/toGet.php" method="post">
                                 <input type="number" hidden="true" value="{{ task.orderId }}" name="orderId">
