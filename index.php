@@ -68,6 +68,7 @@
             line-height: 56px;
             text-align: center;
         }
+
         .table td {
             height: 56px;
             padding: 0 16px;
@@ -79,6 +80,7 @@
             line-height: 56px;
             text-align: center;
         }
+
         .navbar {
             transition: all 0.4s;
         }
