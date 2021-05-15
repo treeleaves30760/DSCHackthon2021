@@ -3,13 +3,13 @@ $(document).on("click", ({ target }) => {
     var time = new Date();
     var name = document.getElementById("name").value;
     var meal = document.getElementById("meal").value;
-    const messageContainer = $("#messageContainer");
-    template = document.importNode(document.getElementById("messagePart").content, true);
-    $("#namePart", template).text(`${name}`);
-    $("#mealPart", template).text(`${meal}`);
-    $("#timePart", template).text(`${time.getTime()}`);
-    // console.log(template);
-    messageContainer.append(template);  
+    // const messageContainer = $("#messageContainer");
+    // template = document.importNode(document.getElementById("messagePart").content, true);
+    // $("#namePart", template).text(`${name}`);
+    // $("#mealPart", template).text(`${meal}`);
+    // $("#timePart", template).text(`${time.getTime()}`);
+    // // console.log(template);
+    // messageContainer.append(template);  
     var obj = {
       name = name,
       meal = meal,
