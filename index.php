@@ -308,18 +308,18 @@
                     <hr>
                 </div>
                 <div class="col-md-5">
-                    <form>
-                        <fieldset class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                        </fieldset>
-                        <fieldset class="form-group">
-                            <textarea class="form-control" id="exampleMessage" placeholder="Message"></textarea>
-                        </fieldset>
-                        <fieldset class="form-group text-xs-right">
-                            <button type="button" class="btn btn-secondary-outline btn-lg">Send</button>
-                        </fieldset>
-                    </form>
-                </div>
+                  <form action="./php/sendContact.php" method="post">
+                      <fieldset class="form-group">
+                          <input type="email" class="form-control" name="email" id="email" placeholder="Enter email">
+                      </fieldset>
+                      <fieldset class="form-group">
+                          <textarea class="form-control" name="message" id="message" placeholder="Message"></textarea>
+                      </fieldset>
+                      <fieldset class="form-group text-xs-right">
+                          <input type="submit" class="btn btn-secondary-outline btn-lg" value="送出"></button>
+                      </fieldset>
+                  </form>
+              </div>
             </div>
         </div>
     </footer>

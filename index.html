@@ -1,7 +1,7 @@
 <html>
   <head>
     <title>外送列表</title>
-    <meta http-equiv="refresh" content="10">
+    <!-- <meta http-equiv="refresh" content="10"> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -118,7 +118,7 @@
         }
         body {
           /* Margin bottom by footer height */
-          margin-bottom: 400px;
+          margin-bottom: 300px;
         }
 
         .footer {
@@ -126,13 +126,13 @@
           bottom: 0;
           width: 100%;
           /* Set the fixed height of the footer here */
-          height: 200px;
+          height: 280px;
         }
 
         /* Taller footer on small screens */
         @media (max-width: 567em) {
             .footer {
-              height: 200px;
+              height: 280px;
             }
         }
 
@@ -222,12 +222,12 @@
       <div class="container">
           <div class="row">
               <div class="col-md-5">
-                  <h5><i class="fa fa-road"></i> ACME CO INC.</h5>
+                  <h5><i class="fas fa-hamburger"></i>MCE INC.| 零卡的距離，隔絕人與人之間的聯繫</h5>
                   <div class="row">
                       <div class="col-6">
                           <ul class="list-unstyled">
-                              <li><a href="">Product</a></li>
-                              <li><a href="">Benefits</a></li>
+                              <li><a href="./index.php">Home</a></li>
+                              <li><a href="">Benefit</a></li>
                               <li><a href="">Partners</a></li>
                               <li><a href="">Team</a></li>
                           </ul>
@@ -242,9 +242,9 @@
                       </div>
                   </div>
                   <ul class="nav">
+                      <li class="nav-item"><a href="https://github.com/treeleaves30760/DSCHackthon2021" class="nav-link"><i class="fa fa-github fa-lg"></i></a></li>
                       <li class="nav-item"><a href="" class="nav-link pl-0"><i class="fa fa-facebook fa-lg"></i></a></li>
                       <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-twitter fa-lg"></i></a></li>
-                      <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-github fa-lg"></i></a></li>
                       <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-instagram fa-lg"></i></a></li>
                   </ul>
                   <br>
@@ -254,25 +254,24 @@
                   <hr>
               </div>
               <div class="col-md-5">
-                  <form>
+                  <form action="./php/sendContact.php" method="post">
                       <fieldset class="form-group">
-                          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                          <input type="email" class="form-control" name="email" id="email" placeholder="Enter email">
                       </fieldset>
                       <fieldset class="form-group">
-                          <textarea class="form-control" id="exampleMessage" placeholder="Message"></textarea>
+                          <textarea class="form-control" name="message" id="message" placeholder="Message"></textarea>
                       </fieldset>
                       <fieldset class="form-group text-xs-right">
-                          <button type="button" class="btn btn-secondary-outline btn-lg">Send</button>
+                          <input type="submit" class="btn btn-secondary-outline btn-lg" value="送出"></button>
                       </fieldset>
                   </form>
               </div>
             </div>
         </div>
     </footer>
+
     <script>
         var app = angular.module("myApp", []);
-        
-        
         app.controller("myController", function ($scope, $http) {
 
             $scope.tasks = [];
