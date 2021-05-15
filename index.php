@@ -8,7 +8,6 @@
     <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <!-- <script defer src = "./js/main.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
@@ -34,8 +33,7 @@
 
   <body>
   <div class="app-container align-items-center justify-content-center flex-column" ng-app="myApp"
-        ng-controller="myController">
-        {{ task_name }}
+        ng-controller="myController"> 
         <h3>外送管理</h3>
         {{ yourName }}
         <div class="table-wrapper">
@@ -68,7 +66,9 @@
     <script>
         var app = angular.module("myApp", []);
         
+        
         app.controller("myController", function ($scope, $http) {
+
             $scope.tasks = [];
             $http.get("./js/text.json").then(
                 function(data) {
@@ -98,8 +98,10 @@
                 $scope.tasks[i].isGet = 1;
             };
 
-
+            
         });
+        
     </script>
+    <script defer src = "./js/main.js"></script>
   </body>
 </html>

@@ -13,14 +13,14 @@
     $json_data = file_get_contents('../js/getarr.json');
     $data = json_decode($json_data, true);
     $myjson = fopen("../js/getarr.json", "w");
-    $timezone  = +8;
+    $timezone  = +7; // UTC +x
     $nowTime = time();
     $lastTime = $data['time'];
     if ($nowTime > $lastTime + 60) {
-        echo(gmdate('Y-m-d h:i:s', $nowTime + 3600*($timezone+date("I"))));
+        echo(gmdate('Y-m-d h:i:s', $nowTime + 60 + 3600*($timezone+date("I"))));
         $data['time'] = $nowTime += 60;
     } else {
-        echo(gmdate('Y-m-d h:i:s', $lastTime + 3600*($timezone+date("I"))));
+        echo(gmdate('Y-m-d h:i:s', $lastTime + 60 + 3600*($timezone+date("I"))));
         $data['time'] += 60;
     }
     fwrite($myjson, json_encode ( $data ));
