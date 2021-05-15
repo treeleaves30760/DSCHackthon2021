@@ -1,6 +1,8 @@
 # DSCHackthon2021
 
 ## Project Name 
+MEICHU EAT
+
 ## Authors
 * 黃雯琪 (angelh52@gmail.com)
 * 許博翔 (treeleaves30760@gmail.com)
