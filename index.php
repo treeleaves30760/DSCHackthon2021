@@ -98,6 +98,11 @@
             background-color: #4ca1af;
             background-image: linear-gradient(135deg, #4ca1af 0%, #c4e0e5 100%);
         }
+
+        .crude {
+          font-size:16px;
+          font-weight:bold;
+        }
     </style>
   </head>
 
@@ -125,7 +130,7 @@
         <h3><b>目前外送等待取餐列表</b></h3>
         {{ yourName }}
         <div class="table-wrapper">
-            <table class="table table-hover">
+            <table class="table table-hover crude">
                 <thead>
                     <tr>
                         <th>名字</th>
@@ -138,7 +143,7 @@
                     <tr ng-repeat="task in tasks" ng-show = "{{ task.isGet == 0 }}" class="{{ task.isGet ? 'table-success' : 'table-light' }}">
                         <td>{{ task.name }}</td>
                         <td>{{ task.meal }}</td>
-                        <td>{{ task.arriveTime }}</td>        <!--// 前面n個人: arriveTime + 60 * (n + 1) -->
+                        <td>{{ task.arriveTime * 1000 | date:'medium' }}</td>        <!--// 前面n個人: arriveTime + 60 * (n + 1) -->
                         <td>
                             <form action = "./php/toGet.php" method="post">
                                 <input type="number" hidden="true" value="{{ task.orderId }}" name="orderId">
@@ -149,7 +154,7 @@
                     </tr>
                 </tbody>
             </table>
-        </div>
+      </div>
     </div>
     <script>
         var app = angular.module("myApp", []);
