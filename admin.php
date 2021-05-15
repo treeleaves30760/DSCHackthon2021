@@ -58,12 +58,12 @@
                 </thead>
                 <tbody>
                     <tr ng-repeat="task in tasks" class="{{ task.status ? 'table-success' : 'table-light' }}">
-                        <td>{{ task.task_user }}</td>
-                        <td>{{ task.task_name }}</td>
-                        <td>{{ task.time }}</td>
+                        <td>{{ task.name }}</td>
+                        <td>{{ task.meal }}</td>
+                        <td>{{ task.arriveTime }}</td>
                         <td>
                             <button class="btn btn-success confirm" ng-click="finished($index)">
-                                {{ task.status ? "已領取" : "領取" }}
+                                {{ task.isGet ? "已領取" : "領取" }}
                             </button>
 
                         </td>
@@ -72,25 +72,36 @@
             </table>
         </div>
     </div>
+
+    <!-- <div class="container">
+        <template id = "foodList">
+            <div class = "container">
+                <div class = "row">
+                    <div class = "pb-3 col-9 bg-light textPP" id = "namePart"></div>
+                    <div class = "pb-3 col-3 timePart textPP" id = "mealPart"></div><br>
+                </div>
+            </div>
+        </template>
+    </div> -->
+
     <script>
         var app = angular.module("myApp", []);
-        app.controller("myController", function ($scope) {
+        
+        app.controller("myController", function ($scope, $http) {
             $scope.tasks = [];
-            // $scope.saved = localStorage.getItem("tasks");
-            // $scope.tasks =
-            //   localStorage.getItem("tasks") !== null
-            //     ? JSON.parse($scope.saved)
-            //     : [
-            //         { task_name: "Learn AngularJS", status: false },
-            //         { task_name: "Build an Angular app", status: false }
-            //       ];
-            // localStorage.setItem("tasks", JSON.stringify($scope.tasks));
+            $http.get("./js/text.json").then(
+                function(data) {
+                    console.log(data);
+                    $scope.tasks = data['data'];
+                    console.log($scope.tasks);
+                }
+            )
 
-            $scope.saveTask = function () {
-                $timeArrive = new Date().getTime();
-                $scope.tasks.push({ task_user: $scope.your_Name, task_name: $scope.yourTask, time: $timeArrive , status: false });
-                //   localStorage.setItem("tasks", JSON.stringify($scope.tasks));
-            };
+            // $scope.saveTask = function () {
+            //     $timeArrive = new Date().getTime();
+            //     $scope.tasks.push({ task_user: $scope.your_Name, task_name: $scope.yourTask, time: $timeArrive , status: false });
+            //     //   localStorage.setItem("tasks", JSON.stringify($scope.tasks));
+            // };
             $scope.getTask = function () {
                 var oldTasks = $scope.tasks;
                 $scope.tasks = [];
