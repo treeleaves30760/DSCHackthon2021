@@ -32,7 +32,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <!-- <header class="header">
         <nav class="navbar navbar-expand-lg fixed-top py-3">
             <div class="container"><a href="./index.php"
                     class="navbar-brand text-uppercase font-weight-bold">宿舍食物外送分配取餐系統</a>
@@ -55,7 +55,7 @@
                 </div>
             </div>
         </nav>
-    </header>
+    </header> -->
 
     <div class="container d-flex align-items-center justify-content-center flex-column">
         <h2><b>預約成功</b></h2>
