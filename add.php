@@ -1,17 +1,20 @@
 <?php
-  $json_string = file_get_contents('./js/text.json'); 
+  $json_data = file_get_contents('./js/text.json');
   $data = json_decode($json_string, true);
-  // print_r(gettype($data[0]["message"]));
 
   $myjson = fopen("./js/text.json", "w");
   $time = time();
   $arr = [
-    "message"=>$_POST['messageToSend'],
-    "time"=>$time
-  ];
+    "orderId"=>count($data),
+    "name"=>$_POST['name'],
+    "meal"=>$_POST['meal'],
+    "arriveTime"=>$time,
+    "isGet"=>0
+  ]
   array_push($data,$arr);
   fwrite($myjson, json_encode ( $data ));
   fclose($myjson);
   header('Location: https://chat.hsupohsiang.repl.co/');
   exit;
+
 ?>
