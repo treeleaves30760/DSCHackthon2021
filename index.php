@@ -2,7 +2,7 @@
 
 <head>
     <title>外送列表</title>
-    <meta http-equiv="refresh" content="10">
+    <!-- <meta http-equiv="refresh" content="10"> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
         integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
         crossorigin="anonymous"></script>
@@ -36,190 +36,7 @@
             --color-table-header: #4E525E;
         }
     </style>
-    <style>
-        .app-container {
-            padding-top: 120px;
-            padding-bottom: 120px;
-            padding-left: 20%;
-            padding-right: 20%;
-        }
-
-        .table-wrapper {
-
-            border: 1px solid var(--color-card-border);
-            border-radius: 20px;
-            background-color: var(--color-card-bg);
-            box-shadow: 3px 3px 5px var(--color-card-shadow);
-        }
-
-        .table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        .table th {
-            height: 56px;
-            padding: 0 16px;
-            border-top: none;
-            border-bottom: 1px solid var(--color-table-border);
-            color: var(--color-table-header);
-            font-size: 14px;
-            font-weight: 500;
-            line-height: 56px;
-            text-align: center;
-        }
-
-        .table td {
-            height: 56px;
-            padding: 0 16px;
-            border-top: none;
-            border-bottom: 1px solid var(--color-table-border);
-            color: var(--color-table-header);
-            font-size: 14px;
-            font-weight: 500;
-            line-height: 56px;
-            text-align: center;
-        }
-
-        .navbar {
-            transition: all 0.4s;
-        }
-
-        .navbar .nav-link {
-            color: #000;
-        }
-
-        .navbar .nav-link:hover,
-        .navbar .nav-link:focus {
-            color: #000;
-            text-decoration: none;
-        }
-
-        .navbar .navbar-brand {
-            color: #000;
-        }
-
-
-        /* Change navbar styling on scroll */
-        .navbar.active {
-            background: #333;
-            box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .navbar.active .nav-link {
-            color: #CCC;
-        }
-
-        .navbar.active .nav-link:hover,
-        .navbar.active .nav-link:focus {
-            color: #CCC;
-            text-decoration: none;
-        }
-
-        .navbar.active .navbar-brand {
-            color: #CCC;
-        }
-
-
-        /* Change navbar styling on small viewports */
-        @media (max-width: 991.98px) {
-            .navbar {
-                background: #fff;
-            }
-
-            .navbar .navbar-brand,
-            .navbar .nav-link {
-                color: #555;
-            }
-        }
-
-
-
-        /*
-        *
-        * ==========================================
-        * FOR DEMO PURPOSES
-        * ==========================================
-        *
-        */
-        .text-small {
-            font-size: 0.9rem !important;
-        }
-
-
-        body {
-            min-height: 110vh;
-            background-color: rgb(240, 243, 255);
-            background-image: linear-gradient(135deg, rgb(239, 241, 254) 0%, rgb(255, 255, 255) 100%);
-        }
-
-        .crude {
-            font-size: 16px;
-            font-weight: bold;
-        }
-
-        @import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:300);
-
-        body {
-            font-family: 'Alegreya Sans', sans-serif;
-        }
-
-        /* Sticky footer position and size
-        -------------------------------------------------- */
-        html {
-            position: relative;
-            min-height: 100%;
-        }
-
-        body {
-            /* Margin bottom by footer height */
-            margin-bottom: 300px;
-        }
-
-        .footer {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            /* Set the fixed height of the footer here */
-            height: 280px;
-        }
-
-        /* Taller footer on small screens */
-        @media (max-width: 567em) {
-            .footer {
-                height: 280px;
-            }
-        }
-
-        /* Sticky footer style and color
-        -------------------------------------------------- */
-        footer {
-            padding-top: 40px;
-            background-color: #292c2f;
-            color: #bbb;
-        }
-
-        footer a {
-            color: #999;
-            text-decoration: none;
-        }
-
-        footer a:hover,
-        footer a:focus {
-            color: #aaa;
-            text-decoration: none;
-            border-bottom: 1px dotted #999;
-        }
-
-        footer .form-control {
-            background-color: #1f2022;
-            box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
-            border: none;
-            resize: none;
-            color: #d1d2d2;
-            padding: 0.7em 1em;
-        }
-    </style>
+    <link href="./css/main.css" rel="stylesheet" type="text/css">
 </head>
 
 
@@ -238,7 +55,7 @@
                                 class="nav-link text-uppercase font-weight-bold">Home <span
                                     class="sr-only">(current)</span></a></li>
                         <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">About</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">Contact</a>
+                        <li class="nav-item"><a href="#contactUs" class="nav-link text-uppercase font-weight-bold">Contact</a>
                         </li>
                         <li class="nav-item"><a href="./admin.php" class="nav-link text-uppercase font-weight-bold">To
                                 Admin</a></li>
@@ -270,7 +87,7 @@
                         <td>{{ task.arriveTime * 1000 | date:'medium' }}</td>
                         <!--// 前面n個人: arriveTime + 60 * (n + 1) -->
                         <td>
-                            <form action="./php/toGet.php" method="post">
+                            <form action="./php/toGet.php" class="center" method="post">
                                 <input type="number" hidden="true" value="{{ task.orderId }}" name="orderId">
                                 <input type="submit" class="btn btn-success confirm"
                                     value="{{ task.isGet ? '已領取' : '預約' }}" />
@@ -286,20 +103,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
-                    <h5><i class="fas fa-hamburger"></i>MCE INC.| 零卡的距離，隔絕人與人之間的聯繫</h5>
+                    <h5><i class="fas fa-hamburger"></i>MCE INC.│零卡的距離</h5>
                     <div class="row">
                         <div class="col-6">
                             <ul class="list-unstyled">
                                 <li><a href="./index.php">Home</a></li>
                                 <li><a href="">Benefit</a></li>
-                                <li><a href="">Partners</a></li>
-                                <li><a href="">Team</a></li>
                             </ul>
                         </div>
                         <div class="col-6">
                             <ul class="list-unstyled">
-                                <li><a href="">Documentation</a></li>
-                                <li><a href="">Support</a></li>
                                 <li><a href="">Legal Terms</a></li>
                                 <li><a href="">About</a></li>
                             </ul>
@@ -315,7 +128,7 @@
                     </ul>
                     <br>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2" id="contactUs">
                     <h5 class="text-md-right">Contact Us</h5>
                     <hr>
                 </div>
