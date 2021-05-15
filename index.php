@@ -68,7 +68,17 @@
             line-height: 56px;
             text-align: center;
         }
-
+        .table td {
+            height: 56px;
+            padding: 0 16px;
+            border-top: none;
+            border-bottom: 1px solid var(--color-table-border);
+            color: var(--color-table-header);
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 56px;
+            text-align: center;
+        }
         .navbar {
             transition: all 0.4s;
         }
