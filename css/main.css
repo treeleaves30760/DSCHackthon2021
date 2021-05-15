@@ -1,3 +1,11 @@
+html {
+    --color-card-bg: rgba(255, 255, 255, 0.8);
+    --color-card-border: rgba(214, 214, 214, 0.8);
+    --color-card-shadow: rgba(0, 0, 0, 0.16);
+    --color-table-border: #E6E6E6;
+    --color-table-header: #4E525E;
+}
+
 .app-container {
     padding-top: 120px;
     padding-bottom: 120px;

@@ -27,15 +27,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-    <style>
-        html {
-            --color-card-bg: rgba(255, 255, 255, 0.8);
-            --color-card-border: rgba(214, 214, 214, 0.8);
-            --color-card-shadow: rgba(0, 0, 0, 0.16);
-            --color-table-border: #E6E6E6;
-            --color-table-header: #4E525E;
-        }
-    </style>
     <link href="./css/main.css" rel="stylesheet" type="text/css">
 </head>
 
