@@ -7,7 +7,7 @@
 * 王柏涵 (allen109061101@gapp.nthu.edu.tw)
 
 ## License
-[MIT License]
+[MIT License](https://github.com/treeleaves30760/DSCHackthon2021/blob/main/LICENSE)
 
 ## Problem to solve
 During this pandemic, we should do our best to avoid contacting with others.
