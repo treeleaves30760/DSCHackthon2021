@@ -1,14 +1,15 @@
-## DSCHackthon2021
+# DSCHackthon2021
 
-### Project Name 
-### Team member
+## Project Name 
+## Authors
 * 黃雯琪 (angelh52@gmail.com)
 * 許博翔 (treeleaves30760@gmail.com)
 * 王柏涵 (allen109061101@gapp.nthu.edu.tw)
 
-### License: MIT
+## License
+[MIT License]
 
-### The problem we found
+## Problem to solve
 During this pandemic, we should do our best to avoid contacting with others.
 
 Living in the dormitory makes us think of a question: How to get our meal without walking out?
@@ -16,14 +17,14 @@ The answer to the question may be quite simple: food delivery system, but **what
 
 And this is what we want to improve, **we hope to** develop a website that will **arrange the time for the students to get their meal one by one in order to keep decent social distance**.
 
-### Techniques we use
+## Techniques we use
 * php
 * angular
 * html
 * css
 * javascript
 
-### How to use
+## How to use
 Our idea is simple: 
 * When the delivery arrived, manager collect related INFO:
 	* user's name
@@ -31,7 +32,7 @@ Our idea is simple:
 * At the user side, they will see if their meal has arrived, they can press the "reserve" button, and the backend will tell them when to pick up their meal 
 * We create a "pickup status" to tell whether the meal had been picked up by the user
 
-### Future plan
+## Future plan
 * Login system with the following 2 account type:
 	* client (normal user)	// 實名制
 	* manger 
