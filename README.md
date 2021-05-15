@@ -1,8 +1,14 @@
 # DSCHackthon2021
 
+## Project Name**: 
+## Team member**:
+	1. 黃雯琪 ()
+	2. 許博翔 (treeleaves30760@gmail.com)
+	3. 王柏涵 (allen109061101@gapp.nthu.edu.tw)
 
-// dormitory
+## License: MIT
 
+## The problem we found:
 During this pandemic, we should do our best to avoid contacting with others.
 
 Living in the dormitory makes us think of a question: How to get our meal without walking out?
@@ -11,6 +17,6 @@ The answer to the question may be quite simple: food delivery system, but what i
 And this is what we want to improve, we hope to develop a website that will arrange the time for the students to get their meal one by one in order to keep decent social distance.
 
 Our idea is simple: 
-	1. We list the arrived meal in order, and remind the user the INFO (the time and the place the get their meal).
+	1. When the delivery arrived, manager
 	2. We create a "pickup status" to tell whether the meal is picked up by the user
 	3. 
