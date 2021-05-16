@@ -112,8 +112,8 @@
                     </div>
                     <ul class="nav">
                         <li class="nav-item"><a href="https://github.com/treeleaves30760/DSCHackthon2021"
-                                class="nav-link"><i class="fa fa-github fa-lg"></i></a></li>
-                        <li class="nav-item"><a href="" class="nav-link pl-0"><i class="fa fa-facebook fa-lg"></i></a>
+                                class="nav-link pl-0"><i class="fa fa-github fa-lg"></i></a></li>
+                        <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-facebook fa-lg"></i></a>
                         </li>
                         <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-twitter fa-lg"></i></a></li>
                         <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-instagram fa-lg"></i></a></li>

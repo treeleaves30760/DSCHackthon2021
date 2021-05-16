@@ -146,7 +146,7 @@ html {
 
 body {
     /* Margin bottom by footer height */
-    margin-bottom: 300px;
+    margin-bottom: 330px;
 }
 
 .footer {
@@ -154,20 +154,20 @@ body {
     bottom: 0;
     width: 100%;
     /* Set the fixed height of the footer here */
-    height: 280px;
+    height: 300px;
 }
 
 /* Taller footer on small screens */
 @media (max-width: 567em) {
     .footer {
-        height: 280px;
+        height: 300px;
     }
 }
 
 /* Sticky footer style and color
 -------------------------------------------------- */
 footer {
-    padding-top: 40px;
+    padding-top: 10px;
     background-color: #292c2f;
     color: #bbb;
 }

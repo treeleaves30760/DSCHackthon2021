@@ -101,13 +101,13 @@
                 <div class="col-md-5">
                     <h5><i class="fas fa-hamburger"></i>MCE INC.│零卡的距離</h5>
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-3">
                             <ul class="list-unstyled">
                                 <li><a href="./index.php">Home</a></li>
                                 <li><a href="">Benefit</a></li>
                             </ul>
                         </div>
-                        <div class="col-6">
+                        <div class="col-3">
                             <ul class="list-unstyled">
                                 <li><a href="">Legal Terms</a></li>
                                 <li><a href="">About</a></li>
@@ -116,9 +116,8 @@
                     </div>
                     <ul class="nav">
                         <li class="nav-item"><a href="https://github.com/treeleaves30760/DSCHackthon2021"
-                                class="nav-link"><i class="fa fa-github fa-lg"></i></a></li>
-                        <li class="nav-item"><a href="" class="nav-link pl-0"><i class="fa fa-facebook fa-lg"></i></a>
-                        </li>
+                                class="nav-link  pl-0"><i class="fa fa-github fa-lg"></i></a></li>
+                        <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-facebook fa-lg"></i></a></li>
                         <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-twitter fa-lg"></i></a></li>
                         <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-instagram fa-lg"></i></a></li>
                     </ul>
