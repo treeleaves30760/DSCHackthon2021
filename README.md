@@ -26,6 +26,9 @@ And this is what we want to improve, **we hope to** develop a website that will 
 * css
 * javascript
 
+## Demo Website
+https://dschackthon2021.hsupohsiang.repl.co/
+
 ## How to use
 Our idea is simple: 
 * When the delivery arrived, manager collect related INFO:
