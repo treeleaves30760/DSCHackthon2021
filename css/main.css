@@ -146,7 +146,7 @@ html {
 
 body {
     /* Margin bottom by footer height */
-    margin-bottom: 500px;
+    margin-bottom: 600px;
 }
 
 .footer {
@@ -154,13 +154,13 @@ body {
     bottom: 0;
     width: 100%;
     /* Set the fixed height of the footer here */
-    height: 400px;
+    height: 420px;
 }
 
 /* Taller footer on small screens */
 @media (max-width: 567em) {
     .footer {
-        height: 400px;
+        height: 420px;
     }
 }
 
