@@ -71,17 +71,17 @@
         <button class="btn btn-success">
             <h2>領取時間<h2 class="timeToGet">
                     <?php
+                date_default_timezone_set('Asia/Taipei');
                 $json_data = file_get_contents('../js/getarr.json');
                 $data = json_decode($json_data, true);
                 $myjson = fopen("../js/getarr.json", "w");
-                $timezone  = +7; // UTC +x
                 $nowTime = time();
                 $lastTime = $data['time'];
                 if ($nowTime > $lastTime + 60) {
-                    echo(gmdate('Y-m-d h:i:s', $nowTime + 60 + 3600*($timezone+date("I"))));
+                    echo(date('Y-m-d h:i:s', $nowTime + 60));
                     $data['time'] = $nowTime += 60;
                 } else {
-                    echo(gmdate('Y-m-d h:i:s', $lastTime + 60 + 3600*($timezone+date("I"))));
+                    echo(date('Y-m-d h:i:s', $lastTime + 60));
                     $data['time'] += 60;
                 }
                 fwrite($myjson, json_encode ( $data ));
