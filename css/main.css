@@ -154,20 +154,20 @@ body {
     bottom: 0;
     width: 100%;
     /* Set the fixed height of the footer here */
-    height: 300px;
+    height: 400px;
 }
 
 /* Taller footer on small screens */
 @media (max-width: 567em) {
     .footer {
-        height: 300px;
+        height: 400px;
     }
 }
 
 /* Sticky footer style and color
 -------------------------------------------------- */
 footer {
-    padding-top: 10px;
+    padding-top: 30px;
     background-color: #292c2f;
     color: #bbb;
 }
