@@ -29,6 +29,12 @@
             padding-left: 120px;
             padding-right: 120px;
         }
+
+        body {
+            min-height: 110vh;
+            background-color: rgb(240, 243, 255);
+            background-image: linear-gradient(135deg, rgb(239, 241, 254) 0%, rgb(255, 255, 255) 100%);
+        }
     </style>
     <link href="./css/main.css" rel="stylesheet" type="text/css">
 </head>

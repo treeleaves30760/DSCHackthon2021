@@ -133,7 +133,7 @@
                           <textarea class="form-control" name="message" id="message" placeholder="Message"></textarea>
                       </fieldset>
                       <fieldset class="form-group text-xs-right">
-                          <button type="submit" class="btn btn-info submitMessage" value="送出">送出</button>
+                          <button type="submit" class="btn btn-success submitMessage" value="送出">送出</button>
                       </fieldset>
                   <!-- </form> -->
               </div>
