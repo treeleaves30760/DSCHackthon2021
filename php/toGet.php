@@ -32,8 +32,8 @@
 
         body {
             min-height: 110vh;
-            background-color: rgb(240, 243, 255);
-            background-image: linear-gradient(135deg, rgb(239, 241, 254) 0%, rgb(255, 255, 255) 100%);
+            background-color: rgb(220, 223, 235);
+            background-image: linear-gradient(135deg, rgb(180, 200, 234) 0%, rgb(235, 235, 235) 100%);
         }
     </style>
     <link href="./css/main.css" rel="stylesheet" type="text/css">
