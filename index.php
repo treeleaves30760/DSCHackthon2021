@@ -47,10 +47,8 @@
                                 class="nav-link text-uppercase font-weight-bold">Home <span
                                     class="sr-only">(current)</span></a></li>
                         <li class="nav-item"><a href="./about/aboutus.php" class="nav-link text-uppercase font-weight-bold">About</a></li>
-                        <li class="nav-item"><a href="#contactUs" class="nav-link text-uppercase font-weight-bold">Contact</a>
-                        </li>
-                        <li class="nav-item"><a href="./admin.php" class="nav-link text-uppercase font-weight-bold">To
-                                Admin</a></li>
+                        <li class="nav-item"><a href="#contactUs" class="nav-link text-uppercase font-weight-bold">Contact</a></li>
+                        <li class="nav-item"><a href="./admin.php" class="nav-link text-uppercase font-weight-bold">To Admin</a></li>
                     </ul>
                 </div>
             </div>
@@ -133,7 +131,7 @@
                           <textarea class="form-control" name="message" id="message" placeholder="Message"></textarea>
                       </fieldset>
                       <fieldset class="form-group text-xs-right">
-                          <input type="submit" class="btn btn-secondary-outline btn-lg" value="送出"></button>
+                          <input type="submit" class="btn btn-success" value="送出"></button>
                       </fieldset>
                   </form>
               </div>
