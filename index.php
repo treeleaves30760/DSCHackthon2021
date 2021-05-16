@@ -121,8 +121,8 @@
                     <br>
                 </div>
                 <div class="col-md-2" id="contactUs">
-                    <h5 class="text-md-right">Contact Us</h5>
-                    <hr>
+                    <h5 class="text-md-right">聯絡我們</h5>
+                    <!-- <hr> -->
                 </div>
                 <div class="col-md-5">
                   <!-- <form> -->
