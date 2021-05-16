@@ -1,7 +1,7 @@
 # DSCHackthon2021
 
 ## Project Name 
-梅竹EAT! MEICHU EAT
+[梅竹EAT! MEICHU EAT](https://dschackthon2021.hsupohsiang.repl.co/)
 
 ## Authors
 * 黃雯琪 (angelh52@gmail.com)
