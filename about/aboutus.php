@@ -160,7 +160,7 @@
                           <textarea class="form-control" name="message" id="message" placeholder="Message"></textarea>
                       </fieldset>
                       <fieldset class="form-group text-xs-right">
-                          <input type="submit" class="btn btn-secondary-outline btn-lg" value="送出"></button>
+                          <input type="submit" class="btn btn-success submitMessage" value="送出"></button>
                       </fieldset>
                   </form>
               </div>
