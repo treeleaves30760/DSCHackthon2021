@@ -154,13 +154,13 @@ body {
     bottom: 0;
     width: 100%;
     /* Set the fixed height of the footer here */
-    height: 420px;
+    height: 520px;
 }
 
 /* Taller footer on small screens */
 @media (max-width: 567em) {
     .footer {
-        height: 420px;
+        height: 520px;
     }
 }
 
