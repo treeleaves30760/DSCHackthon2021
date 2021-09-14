@@ -86,10 +86,10 @@
         
         app.controller("myController", function ($scope, $http) {
             $scope.tasks = [];
-            $http.get("./js/text.json").then(
+            $http.get("./js/tex.json").then(
                 function(data) {
                     console.log(data);
-                    $scope.tasks = data['data'];
+                    $scope.tasks = data['data']['data'];
                     console.log($scope.tasks);
                 }
             )

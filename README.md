@@ -1,8 +1,6 @@
 # DSCHackthon2021
 
 ## Project Name 
-[梅竹EAT! MEICHU EAT](https://dschackthon2021.hsupohsiang.repl.co/)
-
 ## Authors
 * 黃雯琪 (angelh52@gmail.com)
 * 許博翔 (treeleaves30760@gmail.com)
@@ -25,9 +23,6 @@ And this is what we want to improve, **we hope to** develop a website that will 
 * html
 * css
 * javascript
-
-## Demo Website
-https://dschackthon2021.hsupohsiang.repl.co/
 
 ## How to use
 Our idea is simple: 
